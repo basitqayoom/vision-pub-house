@@ -165,7 +165,7 @@ export default function VisionPublishingHouse() {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">
-              {["About", "Services", "Publications", "Contact"].map((item, index) => (
+              {["About", "Services", "Contact"].map((item, index) => (
                 <motion.a
                   key={item}
                   href={`#${item.toLowerCase()}`}
@@ -259,17 +259,19 @@ export default function VisionPublishingHouse() {
               <Button
                 size="lg"
                 className="bg-coral-500 hover:bg-coral-600 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group"
+                onClick={() => window.location.href = 'tel:+917889381511'}
               >
-                Explore Our Services
+                <Phone className="w-5 h-5 mr-2" />
+                Call Now
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button
+              {/* <Button
                 variant="outline"
                 size="lg"
                 className="border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm bg-transparent"
               >
                 View Publications
-              </Button>
+              </Button> */}
             </motion.div>
 
             <motion.div className="flex flex-wrap justify-center gap-6 mt-16" variants={fadeInUp}>
@@ -440,7 +442,7 @@ export default function VisionPublishingHouse() {
               <motion.div variants={fadeInRight} className="relative">
                 <div className="relative z-10">
                   <Image
-                    src="/placeholder.svg?height=500&width=600&text=Vision+Publishing+Office"
+                    src="https://plus.unsplash.com/premium_photo-1677567996070-68fa4181775a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGlicmFyeXxlbnwwfHwwfHx8MA%3D%3D"
                     alt="Vision Publishing House Office"
                     width={600}
                     height={500}
@@ -545,7 +547,7 @@ export default function VisionPublishingHouse() {
       </section>
 
       {/* Enhanced Publications Showcase */}
-      <section id="publications" className="py-20 bg-gradient-to-br from-slate-50 to-teal-50/30">
+      {/* <section id="publications" className="py-20 bg-gradient-to-br from-slate-50 to-teal-50/30">
         <div className="container mx-auto px-4">
           <motion.div
             initial="hidden"
@@ -638,7 +640,7 @@ export default function VisionPublishingHouse() {
             </motion.div>
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* Enhanced Contact Section */}
       <section
@@ -752,10 +754,24 @@ export default function VisionPublishingHouse() {
                     ))}
 
                     <div className="pt-6">
-                      <Button className="w-full bg-coral-500 hover:bg-coral-600 text-white py-3 rounded-full font-semibold group">
-                        Start Your Partnership Journey
-                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                      </Button>
+                      <div className="flex flex-col sm:flex-row gap-4">
+                        <Button
+                          className="flex-1 bg-coral-500 hover:bg-coral-600 text-white py-3 rounded-full font-semibold group"
+                          onClick={() => window.location.href = 'mailto:umaraziz97@gmail.com'}
+                        >
+                          <Mail className="w-4 h-4 mr-2" />
+                          Send Email
+                          <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                        <Button
+                          className="flex-1 bg-white/20 hover:bg-white/30 text-white border border-white/30 py-3 rounded-full font-semibold group"
+                          onClick={() => window.location.href = 'tel:+917889381511'}
+                        >
+                          <Phone className="w-4 h-4 mr-2" />
+                          Call Now
+                          <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                      </div>
                     </div>
                   </CardContent>
                 </Card>
@@ -788,7 +804,7 @@ export default function VisionPublishingHouse() {
             <div>
               <h6 className="font-semibold text-white mb-4">Quick Links</h6>
               <div className="space-y-2">
-                {["About Us", "Our Services", "Publications", "Contact"].map((link) => (
+                {["About Us", "Our Services", "Contact"].map((link) => (
                   <a key={link} href="#" className="block text-slate-400 hover:text-teal-400 transition-colors">
                     {link}
                   </a>
