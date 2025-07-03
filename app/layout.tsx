@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: 'Vision Publishing House - Professional Book Publishing Services',
-  description: 'Vision Publishing House offers comprehensive book publishing services including manuscript editing, design, printing, and distribution. Contact us at +91-7889381511 or umaraziz97@gmail.com for educational publishing needs.',
+  description: 'Vision Publishing House offers comprehensive book publishing services including manuscript editing, design, printing, and distribution. Contact us at +91-7889381511 or sales@visionpubhouse.com for educational publishing needs.',
   keywords: 'vision publishing house, book publishing, manuscript editing, book design, publishing services, self publishing, book printing, author services, literary services',
   authors: [{ name: 'Vision Publishing House' }],
   creator: 'Vision Publishing House',
@@ -80,7 +80,7 @@ export default function RootLayout({
               "contactPoint": {
                 "@type": "ContactPoint",
                 "telephone": "+91-7889381511",
-                "email": "umaraziz97@gmail.com",
+                "email": "sales@visionpubhouse.com",
                 "contactType": "customer service",
                 "availableLanguage": ["English"],
                 "areaServed": "Worldwide"
@@ -139,7 +139,7 @@ export default function RootLayout({
               "name": "Vision Publishing House",
               "image": "https://www.visionpubhouse.com/logo.png",
               "telephone": "+91-7889381511",
-              "email": "umaraziz97@gmail.com",
+              "email": "sales@visionpubhouse.com",
               "url": "https://www.visionpubhouse.com",
               "address": {
                 "@type": "PostalAddress",

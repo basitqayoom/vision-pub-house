@@ -682,8 +682,8 @@ export default function VisionPublishingHouse() {
                     {
                       icon: Mail,
                       title: "Email Address",
-                      content: "umaraziz97@gmail.com",
-                      link: "mailto:umaraziz97@gmail.com",
+                      content: "sales@visionpubhouse.com",
+                      link: "mailto:sales@visionpubhouse.com",
                     },
                     {
                       icon: Phone,
@@ -757,7 +757,7 @@ export default function VisionPublishingHouse() {
                       <div className="flex flex-col sm:flex-row gap-4">
                         <Button
                           className="flex-1 bg-coral-500 hover:bg-coral-600 text-white py-3 rounded-full font-semibold group"
-                          onClick={() => window.location.href = 'mailto:umaraziz97@gmail.com'}
+                          onClick={() => window.location.href = 'mailto:sales@visionpubhouse.com'}
                         >
                           <Mail className="w-4 h-4 mr-2" />
                           Send Email
